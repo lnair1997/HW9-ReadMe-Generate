@@ -1,6 +1,5 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
-const axios = require("axios");
 const generateMarkdown = require("./utils/generateMarkdown")
 
 const questions = [
@@ -67,7 +66,7 @@ function init() {
 
     inquirer.prompt(questions)
         .then(data => {
-            writeToFile("README.md", data);
+            writeToFile("newReadMe.md", data);
         })
         .catch(error => {
             console.log(error);
