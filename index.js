@@ -6,56 +6,55 @@ const generateMarkdown = require("./utils/generateMarkdown")
 const questions = [
     {
         type: "input",
-        message: "Title of the project?",
-        name: "title"
+        name: "username",
+        message: "What is your Github username?"
     },
     {
         type: "input",
-        message: "Description of the project",
-        name: "description"
+        name: "title",
+        message: "Title of the project?"
     },
     {
         type: "input",
-        message: "Installation",
-        name: "installation"
+        name: "description",
+        message: "Description of the project?"
     },
     {
         type: "input",
-        message: "Usage",
-        name: "usage"
+        name: "installation",
+        message: "Installations required: "
+    },
+    {
+        type: "input",
+        name: "usage",
+        message: "Usage"
     },
     {
         type: "list",
-        message: "License",
         name: "license",
+        message: "License: ",
         choices: [
             "MIT",
-            "GPLv2",
             "Apache",
-            "GPLv3",
-            "BSD3-clause",
+            "GPL v3",
+            "BSD 3-clause",
             "Other",
         ]
     },
     {
         type: "input",
-        message: "Contributing",
-        name: "contributing"
+        name: "contributing",
+        message: "Contribution"
     },
     {
         type: "input",
-        message: "Tests:",
-        name: "tests"
+        name: "tests",
+        message: "Tests: "
     },
     {
         type: "input",
-        message: "Questions:",
-        name: "questions"
-    },
-    {
-        type: "input",
-        message: "Please enter your github username:",
-        name: "username"
+        name: "questions",
+        message: "Questions: "
     }
 ];
 
