@@ -29,7 +29,7 @@ function generateMarkdown(data) {
   \`\`\` ${data.tests} \`\`\` 
     
   ## <a name="questions"></a> Questions-
-  ${data.questions}
+  > ${data.questions}
   `;
 }
 

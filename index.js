@@ -26,7 +26,7 @@ const questions = [
     {
         type: "input",
         name: "usage",
-        message: "Usage"
+        message: "Usage: "
     },
     {
         type: "list",
@@ -43,7 +43,7 @@ const questions = [
     {
         type: "input",
         name: "contributing",
-        message: "Contribution"
+        message: "Contribution: "
     },
     {
         type: "input",
