@@ -60,13 +60,18 @@ const questions = [
 
 function writeToFile(fileName, data) {
 
-    let readmeData = generateMarkdown(data);
-    fs.writeFile(fileName, readmeData, err => err ? console.log(err) : console.log("Success!"));
-
-}
+    fs.writeFile(fileName, generateMarkdown(data), err => err ? console.log(err) : console.log("Success! File created."));
+};
 
 function init() {
 
-}
+    inquirer.prompt(questions)
+        .then(data => {
+            writeToFile("README.md", data);
+        })
+        .catch(error => {
+            console.log(error);
+        });
+};
 
 init();
