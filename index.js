@@ -59,6 +59,10 @@ const questions = [
 ];
 
 function writeToFile(fileName, data) {
+
+    let readmeData = generateMarkdown(data);
+    fs.writeFile(fileName, readmeData, err => err ? console.log(err) : console.log("Success!"));
+
 }
 
 function init() {
