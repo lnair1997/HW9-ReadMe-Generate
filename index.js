@@ -35,8 +35,8 @@ const questions = [
         choices: [
             "MIT",
             "Apache",
-            "GPL v3",
-            "BSD 3-clause",
+            "GPLv3",
+            "BSD3-clause",
             "Other",
         ]
     },
