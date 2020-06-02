@@ -13,22 +13,22 @@ function generateMarkdown(data) {
   * [Tests](#tests)
   * [Questions](#questions)
 
-  ## <a name="installation"></a> Installation:
+  ## Installation:
   \`\`\` ${data.installation} \`\`\` 
 
-  ## <a name="usage"></a> Usage-
+  ## Usage-
    ${data.usage}
 
-  ## <a name="license"></a> License-
+  ## License-
   License used: ![license](https://img.shields.io/badge/license-${data.license}-GREEN)
 
-  ## <a name="contributing"></a> Contribution-
+  ## Contribution-
    ${data.contributing}
 
-  ## <a name="tests"></a> Tests:
+  ## Tests:
   ${data.tests}
     
-  ## <a name="questions"></a> Questions-
+  ## Questions-
   > ${data.questions}
   `;
 }

@@ -2,20 +2,29 @@
 
 ## Description
 
-- Creating a fuctioning user-based, random password generator. This could be useful to an employee with access to sensitive data, so that their information may be protected. 
+- Using a command-line application, it will dynamically generate a ReadMe.md file from user's input. The user will be prompted for their GitHub username and the following:
+
+1. Project title
+2. Description
+3. Table of Contents
+4. Installation
+5. Usage
+6. License
+7. Contributing
+8. Tests
+9. Questions
 
 ## Technologies Used:
-
-1. HTML
-2. CSS
-3. Javascript
-4. ScreentoGif
-
+```
+1. Javascript
+2. Node
+3. ScreentoGif
+```
 ## Essential Code
 
-![Generate Button](./Assets/GenerateBtn.jpg)
+![NPM Required](./utils/imgs/npmReq.JPG)
 
-- The generate button code: (generateBtn.addEventListener("click", writePassword);). It takes the generate id from the HTML document and makes it available for JavaScript to use. The 'addEventListener' makes it so the code waits until the user 'clicks' on the generate button to initiate action.
+- These are the required npm installs for this project. The fs is to write files and is already part of javascript. Inquirer is used to create prompts for the user to add input and be able to display the response in a ReadMe file.
 
 ## Gif Walkthrough
 
