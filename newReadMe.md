@@ -1,9 +1,8 @@
-function generateMarkdown(data) {
-  return `
-  # ${data.title}
+
+  # ES6 and Read Me
   
   ## Description-
-  ${data.description}
+  this is a description...
 
   ### Table of Contents
   * [Installation](#installation)
@@ -14,23 +13,20 @@ function generateMarkdown(data) {
   * [Questions](#questions)
 
   ## <a name="installation"></a> Installation:
-  \`\`\` ${data.installation} \`\`\` 
+  ``` install npm ... ``` 
 
   ## <a name="usage"></a> Usage-
-   ${data.usage}
+   usage ...
 
   ## <a name="license"></a> License-
-  License used: ![license](https://img.shields.io/badge/license-${data.license}-GREEN)
+  License used: ![license](https://img.shields.io/badge/license-Apache-GREEN)
 
   ## <a name="contributing"></a> Contribution-
-   ${data.contributing}
+   contribution....
 
   ## <a name="tests"></a> Tests:
-  ${data.tests}
+  ``` test... ``` 
     
   ## <a name="questions"></a> Questions-
-  > ${data.questions}
-  `;
-}
-
-module.exports = generateMarkdown;
+  > questions?
+  
